@@ -8,7 +8,6 @@
             // enqueue cdn modernizer, jquery and foundation        
             wp_register_script( 'jquery', get_template_directory_uri() . '/js/jquery.min.js', array(), '2.1.1', true );
             wp_enqueue_script( 'bootstrap-min', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), '3.3.4', true );
-            wp_enqueue_script( 'clean-blog-min', get_template_directory_uri() . '/js/clean-blog.min.js', array( 'jquery' ), '1.0.0', true );
             wp_enqueue_script( 'lazyload-min', get_template_directory_uri() . '/js/lazyload.min.js', array( 'jquery' ), '1.1.0', true );
             wp_enqueue_script( 'instafeed-min', get_template_directory_uri() . '/js/instafeed.min.js', array(), '1.3.3', true );
             wp_enqueue_script( 'app', get_template_directory_uri() . '/js/app.js', array( 'jquery' ), '1.0.0', true );
