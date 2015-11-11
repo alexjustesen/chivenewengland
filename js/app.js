@@ -1,9 +1,9 @@
 /*  js/app.js
  *
  *  Created     7/14/2015
- *  Updated     11/5/2015
+ *  Updated     11/11/2015
  *
- *  Version     v1.0.0
+ *  Version     v1.0.1
  */
 
 $( document ).ready( function() {    
@@ -18,6 +18,12 @@ $( document ).ready( function() {
         instafeedPage();
         instafeedTag('chivenewengland');
     }
+});
+
+// Animate the scroll to top
+$( '.go-top' ).click(function(event) {
+    event.preventDefault();
+    $('html, body').animate({scrollTop: 0}, 300);
 });
 
 // Instafeed for Instagram

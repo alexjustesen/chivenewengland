@@ -569,6 +569,13 @@ footer.site-footer .copyright {
     text-align: center;
     margin-bottom: 0;
 }
+footer.site-footer .go-top {
+    display: inline-block;
+}
+footer.site-footer .go-top:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
 footer.site-footer a.facebook:active,
 footer.site-footer a.facebook:hover {
     color: #3b5998;
