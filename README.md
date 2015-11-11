@@ -2,7 +2,7 @@
 http://www.chivenewengland.com
 
 #### Description:
-This theme was designed for WordPress for chivenewengland.com, use the theme how ever you like it is released under GNU General Public License v2 or later.
+This theme was designed for WordPress for chivenewengland.com, use the theme how ever you like it is released under GNU General Public License v2 or later. To install the theme download the repo and add to your themes directory in WordPress.
 
 #### Change Log:
 
