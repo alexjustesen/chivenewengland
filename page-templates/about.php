@@ -5,6 +5,10 @@
 
 get_header(); ?>
 
+<?php
+    $avatar_args = array( 'class' => 'img-responsive img-circle');
+?>
+
 <!-- Main Content -->
     <div class="container">
         <div class="row">
@@ -17,7 +21,7 @@ get_header(); ?>
                             <h3>Boston Chive</h3>
                             <ul class="list-inline text-center">
                                 <li class="shake shake-crazy">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/blank.gif" data-src="<?php echo get_template_directory_uri(); ?>/img/headshots/placeholder.png" class="lazy img-responsive img-circle grayscale">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/blank.gif" data-src="<?php echo get_template_directory_uri(); ?>/img/avatar-placeholder.png" class="lazy img-responsive img-circle grayscale">
                                     <h3>Dave</h3>
                                 </li>
                                 <li class="shake shake-crazy">
@@ -67,7 +71,7 @@ get_header(); ?>
                             <h3>Danbury Chive</h3>
                             <ul class="list-inline text-center">
                                 <li class="shake shake-slow">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/blank.gif" data-src="<?php echo get_template_directory_uri(); ?>/img/headshots/placeholder.png" class="lazy img-responsive img-circle grayscale">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/blank.gif" data-src="<?php echo get_template_directory_uri(); ?>/img/avatar-placeholder.png" class="lazy img-responsive img-circle grayscale">
                                     <h3>Steve</h3>
                                 </li>
                             </ul>
