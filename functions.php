@@ -26,3 +26,6 @@ require_once('inc/theme-support.php');
 
 // Add social functions
 require_once('inc/social.php');
+
+// Add additional user profile fields support
+require_once('inc/user_profile.php');

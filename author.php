@@ -30,8 +30,7 @@ get_header(); ?>
                             <div class="entry-author-avatar col-sm-3 text-center">
                                 <?php 
                                     $avatar_args = array( 'class' => 'img-responsive img-circle');
-                                    $avatar_default = get_template_directory_uri() . "/img/avatar-placeholder.png";
-                                    echo get_avatar( $post->post_author, 150, $avatar_default, get_the_author(), $avatar_args );
+                                    echo get_avatar( $post->post_author, 150, '', get_the_author(), $avatar_args );
                                 ?>
                             </div>
                             <div class="entry-meta col-sm-9">

@@ -3,10 +3,15 @@
  * Template Name: About Template
  */
 
-get_header(); ?>
+    get_header();
 
-<?php
     $avatar_args = array( 'class' => 'img-responsive img-circle');
+    $users_args = array(
+        'fields'    => array('ID', 'display_name', 'user_email', 'user_login'),
+        'orderby'   => 'ID'
+    );
+
+    $users = get_users( $users_args );
 ?>
 
 <!-- Main Content -->
@@ -20,18 +25,18 @@ get_header(); ?>
                         <div class="well well-sm">
                             <h3>Boston Chive</h3>
                             <ul class="list-inline text-center">
-                                <li class="shake shake-crazy">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/blank.gif" data-src="<?php echo get_template_directory_uri(); ?>/img/avatar-placeholder.png" class="lazy img-responsive img-circle grayscale">
-                                    <h3>Dave</h3>
-                                </li>
-                                <li class="shake shake-crazy">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/blank.gif" data-src="<?php echo get_template_directory_uri(); ?>/img/headshots/matt.jpg" class="lazy img-responsive img-circle grayscale">
-                                    <h3>Matt</h3>
-                                </li>
-                                <li class="shake shake-slow">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/blank.gif" data-src="<?php echo get_template_directory_uri(); ?>/img/headshots/steve.jpg" class="lazy img-responsive img-circle grayscale">
-                                    <h3>Steve</h3>
-                                </li>
+                               
+                                <?php foreach( $users as $key => $user) : ?>
+                                    <?php if( get_the_author_meta( 'chapter', $user->ID ) == 'Boston Chive') : ?>
+                                    
+                                    <li class="shake shake-crazy">
+                                        <?php echo get_avatar( $user->ID, 150, '', $user->display_name, $avatar_args ); ?>
+                                        <h3><?php echo $user->display_name; ?></h3>
+                                    </li>
+                                    
+                                    <?php endif; ?>
+                                <?php endforeach; ?>
+                                
                             </ul>
                             <p>
                                 <a href="https://www.facebook.com/groups/BostonChive/" target="_blank"><i class="fa fa-facebook-official fa-2x fa-fw"></i></a>
@@ -45,18 +50,18 @@ get_header(); ?>
                         <div class="well well-sm">
                             <h3>Chive CT</h3>
                             <ul class="list-inline text-center">
-                                <li class="shake shake-slow">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/blank.gif" data-src="<?php echo get_template_directory_uri(); ?>/img/headshots/alex.jpg" class="lazy img-responsive img-circle grayscale">
-                                    <h3>Alex</h3>
-                                </li>
-                                <li class="shake shake-rotate">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/blank.gif" data-src="<?php echo get_template_directory_uri(); ?>/img/headshots/meg.jpg" class="lazy img-responsive img-circle grayscale">
-                                    <h3>Meg</h3>
-                                </li>
-                                <li class="shake shake-slow">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/blank.gif" data-src="<?php echo get_template_directory_uri(); ?>/img/headshots/rich.jpg" class="lazy img-responsive img-circle grayscale">
-                                    <h3>Rich</h3>
-                                </li>
+                               
+                                <?php foreach( $users as $key => $user) : ?>
+                                    <?php if( get_the_author_meta( 'chapter', $user->ID ) == 'Chive CT') : ?>
+                                    
+                                    <li class="shake shake-slow">
+                                        <?php echo get_avatar( $user->ID, 150, '', $user->display_name, $avatar_args ); ?>
+                                        <h3><?php echo $user->display_name; ?></h3>
+                                    </li>
+                                    
+                                    <?php endif; ?>
+                                <?php endforeach; ?>
+
                             </ul>
                             <p>
                                 <a href="https://www.facebook.com/groups/chivect.social/" target="_blank"><i class="fa fa-facebook-official fa-2x fa-fw"></i></a>
@@ -70,10 +75,18 @@ get_header(); ?>
                         <div class="well well-sm">
                             <h3>Danbury Chive</h3>
                             <ul class="list-inline text-center">
-                                <li class="shake shake-slow">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/blank.gif" data-src="<?php echo get_template_directory_uri(); ?>/img/avatar-placeholder.png" class="lazy img-responsive img-circle grayscale">
-                                    <h3>Steve</h3>
-                                </li>
+                               
+                                <?php foreach( $users as $key => $user) : ?>
+                                    <?php if( get_the_author_meta( 'chapter', $user->ID ) == 'Danbury Chive') : ?>
+                                    
+                                    <li class="shake shake-little">
+                                        <?php echo get_avatar( $user->ID, 150, '', $user->display_name, $avatar_args ); ?>
+                                        <h3><?php echo $user->display_name; ?></h3>
+                                    </li>
+                                    
+                                    <?php endif; ?>
+                                <?php endforeach; ?>
+                                
                             </ul>
                             <p>
                                 <a href="https://www.facebook.com/danburychive" target="_blank"><i class="fa fa-facebook-official fa-2x fa-fw"></i></a>
@@ -87,10 +100,18 @@ get_header(); ?>
                         <div class="well well-sm">
                             <h3>NH Chive</h3>
                             <ul class="list-inline text-center">
-                                <li class="shake shake-slow">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/blank.gif" data-src="<?php echo get_template_directory_uri(); ?>/img/headshots/johnny.jpg" class="lazy img-responsive img-circle grayscale">
-                                    <h3>Johnny</h3>
-                                </li>
+                                
+                                <?php foreach( $users as $key => $user) : ?>
+                                    <?php if( get_the_author_meta( 'chapter', $user->ID ) == 'NH Chive') : ?>
+                                    
+                                    <li class="shake shake-chunk">
+                                        <?php echo get_avatar( $user->ID, 150, '', $user->display_name, $avatar_args ); ?>
+                                        <h3><?php echo $user->display_name; ?></h3>
+                                    </li>
+                                    
+                                    <?php endif; ?>
+                                <?php endforeach; ?>
+                                
                             </ul>
                             <p>
                                 <a href="https://www.facebook.com/groups/nhchive" target="_blank"><i class="fa fa-facebook-official fa-2x fa-fw"></i></a>
@@ -104,10 +125,18 @@ get_header(); ?>
                         <div class="well well-sm">
                             <h3>Chive on RI</h3>
                             <ul class="list-inline text-center">
-                                <li class="shake shake-slow">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/blank.gif" data-src="<?php echo get_template_directory_uri(); ?>/img/headshots/aisa.jpg" class="lazy img-responsive img-circle grayscale">
-                                    <h3>Aisa</h3>
-                                </li>
+                                
+                                <?php foreach( $users as $key => $user) : ?>
+                                    <?php if( get_the_author_meta( 'chapter', $user->ID ) == 'Chive on RI') : ?>
+                                    
+                                    <li class="shake shake-rotate">
+                                        <?php echo get_avatar( $user->ID, 150, '', $user->display_name, $avatar_args ); ?>
+                                        <h3><?php echo $user->display_name; ?></h3>
+                                    </li>
+                                    
+                                    <?php endif; ?>
+                                <?php endforeach; ?>
+                                
                             </ul>
                             <p>
                                 <a href="https://www.facebook.com/groups/ChiveOnRI/" target="_blank"><i class="fa fa-facebook-official fa-2x fa-fw"></i></a>
@@ -118,19 +147,6 @@ get_header(); ?>
                     </div>
                     
                 </div>
-                
-                <hr/>
-                
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <?php while ( have_posts() ) : the_post(); ?>
-
-                    <?php get_template_part( 'content', 'page' ); ?>
-
-                <?php endwhile; // end of the loop. ?>
             </div>
         </div>
     </div>
