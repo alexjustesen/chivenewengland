@@ -6,6 +6,11 @@ This theme was designed for WordPress for chivenewengland.com, use the theme how
 
 #### Change Log:
 
+##### v1.0.2 (Nov 24, 2015)
+- Removed unused code.
+- Added avatar support for authors.
+- Bug fixes.
+
 ##### v1.0.1 (Nov 11, 2015)
 - Added scroll to top button in the footer.
 
