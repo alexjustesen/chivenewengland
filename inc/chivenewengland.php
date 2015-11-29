@@ -22,7 +22,7 @@ if ( ! function_exists( 'chivenewengland_intro_header' ) ) :
 
             <?php if( is_page() ) : ?>
 
-                <header class="intro-header" style="background-image: url('<?php echo $header_img; ?>')">
+                <header class="intro-header" style="background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.25) ), url('<?php echo $header_img; ?>')">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -40,7 +40,7 @@ if ( ! function_exists( 'chivenewengland_intro_header' ) ) :
 
             <?php else : ?>
 
-                <header class="intro-header" style="background-image: url('<?php echo $header_img; ?>')">
+                <header class="intro-header" style="background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.25) ), url('<?php echo $header_img; ?>')">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -60,7 +60,7 @@ if ( ! function_exists( 'chivenewengland_intro_header' ) ) :
 
         <?php elseif ( tribe_is_upcoming() ) : ?>
 
-            <header class="intro-header" style="background-image: url('<?php echo $header_img; ?>')">
+            <header class="intro-header" style="background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.25) ), url('<?php echo $header_img; ?>')">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -74,7 +74,7 @@ if ( ! function_exists( 'chivenewengland_intro_header' ) ) :
 
         <?php else : ?>
 
-           <header class="intro-header" style="background-image: url('<?php echo $header_img; ?>')">
+           <header class="intro-header" style="background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.25) ), url('<?php echo $header_img; ?>')">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
