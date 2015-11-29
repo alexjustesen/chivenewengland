@@ -6,6 +6,11 @@ This theme was designed for WordPress for chivenewengland.com, use the theme how
 
 #### Change Log:
 
+##### v1.0.3 (Nov 29, 2015)
+- Added overlay to header images.
+- Added support for larger header images on medium + screens.
+- Removed default header image from image folder.
+
 ##### v1.0.2 (Nov 24, 2015)
 - Removed unused code.
 - Added avatar support for authors.
