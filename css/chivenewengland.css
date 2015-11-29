@@ -137,14 +137,14 @@ hr.small.inverse {
  * Intro header styles
  */
 .intro-header {
-    background: no-repeat center center;
+    background: no-repeat top center;
     background-attachment: scroll;
     background-color: #404040;
     background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     -webkit-background-size: cover;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .intro-header .site-heading,
@@ -156,6 +156,10 @@ hr.small.inverse {
     text-transform: uppercase;
 }
 @media only screen and (min-width: 768px) {
+    .intro-header {
+        min-height: 50vh;
+    }
+    
     .intro-header .site-heading,
     .intro-header .post-heading,
     .intro-header .page-heading {
