@@ -73,7 +73,7 @@
                         <div class="col-sm-3 entry-meta-author-avatar">
                             <?php 
                                 $avatar_args = array( 'class' => 'img-responsive img-circle');
-                                echo get_avatar( $post->post_author, 150, 'Mystery Man', get_the_author(), $avatar_args );
+                                echo get_avatar( $post->post_author, 150, '', get_the_author(), $avatar_args );
                             ?>
                         </div>
 
