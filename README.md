@@ -6,6 +6,10 @@ This theme was designed for WordPress for chivenewengland.com, use the theme how
 
 #### Change Log:
 
+##### v1.0.4 (Nov 30, 2015)
+- Fixed content avatar image issue.
+- Removed duplicate profile field.
+
 ##### v1.0.3 (Nov 29, 2015)
 - Added overlay to header images.
 - Added support for larger header images on medium + screens.
