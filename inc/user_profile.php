@@ -30,5 +30,5 @@ function chivenewengland_save_profile_fields( $user_id ) {
 		return false;
 
 	/* Copy and paste this line for additional fields. Make sure to change 'twitter' to the field ID. */
-    update_usermeta( $user_id, 'chapter', $_POST['chapter'] );
+    update_user_meta( $user_id, 'chapter', $_POST['chapter'] );
 }
