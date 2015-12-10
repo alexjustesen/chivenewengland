@@ -9,18 +9,18 @@
  */
 
 
-$time_format = get_option( 'time_format', Tribe__Events__Date_Utils::TIMEFORMAT );
+$time_format = get_option( 'time_format', Tribe__Date_Utils::TIMEFORMAT );
 $time_range_separator = tribe_get_option( 'timeRangeSeparator', ' - ' );
 
 $start_datetime = tribe_get_start_date();
 $start_date = tribe_get_start_date( null, false );
 $start_time = tribe_get_start_date( null, false, $time_format );
-$start_ts = tribe_get_start_date( null, false, Tribe__Events__Date_Utils::DBDATEFORMAT );
+$start_ts = tribe_get_start_date( null, false, Tribe__Date_Utils::DBDATEFORMAT );
 
 $end_datetime = tribe_get_end_date();
 $end_date = tribe_get_end_date( null, false );
 $end_time = tribe_get_end_date( null, false, $time_format );
-$end_ts = tribe_get_end_date( null, false, Tribe__Events__Date_Utils::DBDATEFORMAT );
+$end_ts = tribe_get_end_date( null, false, Tribe__Date_Utils::DBDATEFORMAT );
 
 $cost = tribe_get_cost();
 $website = tribe_get_event_website_url();
@@ -40,7 +40,7 @@ $ticket_url = get_post_meta( get_the_ID(), 'tickets_url', true );
 	    <div class="col-sm-4">
             <ul class="list-unstyled">
                 <?php if ( ! empty( $cost ) ) : ?>
-                    <li><strong><i class="fa fa-usd fa-fw"></i> <?php _e( 'Cost:', 'tribe-events-calendar' ); ?></strong> <?php esc_html_e( $cost ); ?></li>
+                    <li><strong><i class="fa fa-usd fa-fw"></i> <?php _e( 'Cost:', 'tribe-events-calendar' ); ?></strong> <?php esc_html_e( $cost, 'chivenewengland' ); ?></li>
                 <?php endif ?>
                 <?php if ( ! empty( $ticket_url ) ) : ?>
                     <li><strong><i class="fa fa-ticket fa-fw"></i> <?php _e( 'Tickets:', 'tribe-events-calendar' ); ?></strong> <a href="<?php echo $ticket_url; ?>" target="_blank">Buy</a></li>

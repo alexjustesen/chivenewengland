@@ -37,8 +37,9 @@ $venue = tribe_get_venue_details();
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div id="tribe-events-content" class="tribe-events-single vevent hentry">
+                
                 <!-- Notices -->
-                <?php tribe_events_the_notices() ?>
+                <?php tribe_the_notices() ?>
 
                 <?php while ( have_posts() ) :  the_post(); ?>
                     <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
