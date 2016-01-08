@@ -23,31 +23,6 @@
                    
                     <div class="col-sm-12 text-center">
                         <div class="well well-sm">
-                            <h3>Boston Chive</h3>
-                            <ul class="list-inline text-center">
-                               
-                                <?php foreach( $users as $key => $user) : ?>
-                                    <?php if( get_the_author_meta( 'chapter', $user->ID ) == 'Boston Chive') : ?>
-                                    
-                                    <li class="shake shake-crazy">
-                                        <?php echo get_avatar( $user->ID, 150, '', $user->display_name, $avatar_args ); ?>
-                                        <h3><?php echo $user->display_name; ?></h3>
-                                    </li>
-                                    
-                                    <?php endif; ?>
-                                <?php endforeach; ?>
-                                
-                            </ul>
-                            <p>
-                                <a href="https://www.facebook.com/groups/BostonChive/" target="_blank"><i class="fa fa-facebook-official fa-2x fa-fw"></i></a>
-                                <a href="https://twitter.com/BostonChive" target="_blank"><i class="fa fa-twitter fa-2x fa-fw"></i></a>
-                                <a href="https://instagram.com/Boston_Chive" target="_blank"><i class="fa fa-instagram fa-2x fa-fw"></i></a>
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="col-sm-12 text-center">
-                        <div class="well well-sm">
                             <h3>Chive CT</h3>
                             <ul class="list-inline text-center">
                                
@@ -67,6 +42,30 @@
                                 <a href="https://www.facebook.com/groups/chivect.social/" target="_blank"><i class="fa fa-facebook-official fa-2x fa-fw"></i></a>
                                 <a href="https://twitter.com/ChiveCT" target="_blank"><i class="fa fa-twitter fa-2x fa-fw"></i></a>
                                 <a href="https://instagram.com/chive_ct" target="_blank"><i class="fa fa-instagram fa-2x fa-fw"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-12 text-center">
+                        <div class="well well-sm">
+                            <h3>Chive On MA</h3>
+                            <ul class="list-inline text-center">
+                               
+                                <?php foreach( $users as $key => $user) : ?>
+                                    <?php if( get_the_author_meta( 'chapter', $user->ID ) == 'Chive On MA') : ?>
+                                    
+                                    <li class="shake shake-crazy">
+                                        <?php echo get_avatar( $user->ID, 150, '', $user->display_name, $avatar_args ); ?>
+                                        <h3><?php echo $user->display_name; ?></h3>
+                                    </li>
+                                    
+                                    <?php endif; ?>
+                                <?php endforeach; ?>
+                                
+                            </ul>
+                            <p>
+                                <a href="https://www.facebook.com/groups/ChiveOnMA/" target="_blank"><i class="fa fa-facebook-official fa-2x fa-fw"></i></a>
+                                <a href="https://twitter.com/ChiveOnMA" target="_blank"><i class="fa fa-twitter fa-2x fa-fw"></i></a>
                             </p>
                         </div>
                     </div>
