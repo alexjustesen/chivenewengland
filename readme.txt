@@ -6,6 +6,13 @@ This theme was designed for WordPress for chivenewengland.com, use the theme how
 
 #### Change Log:
 
+##### v1.0.7 (Jan 24, 2016)
+- Updated favicon
+- Changed navbar to brand logo
+
+##### v1.0.6 (Jan 8, 2016)
+- Chapter list updates. Removed Boston Chive and added Chive On MA.
+
 ##### v1.0.5 (Dec 9, 2015)
 - Updated theme files for Tribe Events Calendar v4.x.
 - Removed the title tag in header.php, WP 4.4 now generates the tag in wp_head().

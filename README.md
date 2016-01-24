@@ -6,6 +6,10 @@ This theme was designed for WordPress for chivenewengland.com, use the theme how
 
 #### Change Log:
 
+##### v1.0.7 (Jan 24, 2016)
+- Updated favicon
+- Changed navbar to brand logo
+
 ##### v1.0.6 (Jan 8, 2016)
 - Chapter list updates. Removed Boston Chive and added Chive On MA.
 
