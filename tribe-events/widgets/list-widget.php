@@ -69,7 +69,7 @@ if ( $posts ) : ?>
     <div class="well well-sm">
             <div class="row">
                 <div class="date col-md-2 text-center">
-                    <i class="fa fa-ticket"></i>
+                    <i class="fa fa-ticket fa-4x"></i>
                 </div>
 
                 <div class="details col-md-10">
