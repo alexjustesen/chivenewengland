@@ -6,6 +6,9 @@ This theme was designed for WordPress for chivenewengland.com, use the theme how
 
 #### Change Log:
 
+##### v1.0.8 (May 19, 2016)
+- Removed brand logo in the header and reverted back to text.
+
 ##### v1.0.7 (Jan 24, 2016)
 - Updated favicon
 - Changed navbar to brand logo
