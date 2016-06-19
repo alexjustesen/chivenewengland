@@ -7,7 +7,7 @@
 
             // enqueue cdn modernizer, jquery and foundation        
             wp_register_script( 'jquery', get_template_directory_uri() . '/js/plugins/jQuery/jquery.min.js', array(), '2.1.1', true );
-            wp_enqueue_script( 'bootstrap-min', get_template_directory_uri() . '/js/plugins/bootstrapbootstrap.min.js', array( 'jquery' ), '3.3.4', true );
+            wp_enqueue_script( 'bootstrap-min', get_template_directory_uri() . '/js/plugins/bootstrap/bootstrap.min.js', array( 'jquery' ), '3.3.4', true );
             wp_enqueue_script( 'lazyload-min', get_template_directory_uri() . '/js/plugins/lazyload/lazyload.min.js', array( 'jquery' ), '1.1.0', true );
             
             if( is_page( 'social' ) ) {
