@@ -6,6 +6,14 @@ This theme was designed for WordPress for chivenewengland.com, use the theme how
 
 #### Change Log:
 
+##### v1.0.9 (Jun 19, 2016)
+- Updated Instagram API call for user data.
+- Updated Instafeed plugin.
+- Moved instafeed app to separate js file.
+- Moved countTo jQuery function to separate js file.
+- Only load instafeed and countTo assets on social page.
+- Updated instagram auth.
+
 ##### v1.0.8 (May 19, 2016)
 - Removed brand logo in the header and reverted back to text.
 

@@ -25,9 +25,9 @@ function facebook_likes() {
 function instagram_followers() {
     
     $user_id        = '1414843815';
-    $access_token   = '1414843815.467ede5.248f1e4e8dcf42ae9d1c730165b7cf77';
+    $access_token   = '1650222888.084fe0f.f12a3d83141f4cd6ac52b9e40d7a7d8e';
     
-    $api_url        = 'https://api.instagram.com/v1/users/'.$user_id.'?access_token='.$access_token;
+    $api_url        = 'https://api.instagram.com/v1/users/self/?access_token='.$access_token;
     $api_response   = wp_remote_get( $api_url );
     $api_body       = json_decode( wp_remote_retrieve_body( $api_response ) );
     
