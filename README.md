@@ -6,6 +6,12 @@ This theme was designed for WordPress for chivenewengland.com, use the theme how
 
 #### Change Log:
 
+##### v1.10.0 (Sept 10, 2016)
+- Updated Font Awesome to v4.6.3.
+- Removed support for The Events Calendar plugin.
+- Added template page for Facebook Events Importer plugin.
+- Removed unused code.
+
 ##### v1.0.9 (Jun 19, 2016)
 - Updated Instagram API call for user data.
 - Updated Instafeed plugin.
