@@ -7,8 +7,7 @@
 if ( ! function_exists( 'chivenewengland_intro_header' ) ) :
     function chivenewengland_intro_header() {
 
-        // Set defaults and includes
-        include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+        // Set defaults
         $header_img = get_header_image();
 
         // Header loop                
@@ -57,20 +56,6 @@ if ( ! function_exists( 'chivenewengland_intro_header' ) ) :
                 </header>
 
             <?php endif; ?>
-
-        <?php elseif ( tribe_is_upcoming() ) : ?>
-
-            <header class="intro-header" style="background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.25) ), url('<?php echo $header_img; ?>')">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                            <div class="page-heading">
-                                <h1 class="title"><?php echo tribe_get_events_title(); ?></h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
 
         <?php else : ?>
 
@@ -127,50 +112,6 @@ function ChiveNewEngland_social_footer() { ?>
         </li>
     </ul>
 <?php }
-
-if ( function_exists( 'tribe_events_list_the_date_headers' ) ) {
-   /**
-	 * Used in list loop, displays the date headers between events in the loop when the month / year has changed
-	 *
-	 * @return void
-	 **/
-	function cne_tribe_events_list_the_date_headers() {
-
-		/* Month and year separators (on every month and year change) */
-
-		$show_headers = apply_filters( 'tribe_events_list_show_date_headers', true );
-
-		$html = '';
-
-		if ( $show_headers ) {
-
-			global $post, $wp_query;
-
-			$event_year        = tribe_get_start_date( $post, false, 'Y' );
-			$event_month       = tribe_get_start_date( $post, false, 'm' );
-			$month_year_format = tribe_get_option( 'monthAndYearFormat', 'F Y' );
-
-			if ( $wp_query->current_post > 0 ) {
-				$prev_post        = $wp_query->posts[$wp_query->current_post - 1];
-				$prev_event_year  = tribe_get_start_date( $prev_post, false, 'Y' );
-				$prev_event_month = tribe_get_start_date( $prev_post, false, 'm' );
-			}
-
-
-			/*
-			 * If the event month changed since the last event in the loop,
-			 * or is the same month but the year changed.
-			 *
-			 */
-			if ( $wp_query->current_post === 0 || ( $prev_event_month != $event_month || ( $prev_event_month == $event_month && $prev_event_year != $event_year ) ) ) {
-                $html .= sprintf( '<h4 class="subheader text-center"><i class="fa fa-calendar-o fa-fw"></i> %s</h4>', tribe_get_start_date( $post, false, $month_year_format ) );
-			}
-
-			echo apply_filters( 'tribe_events_list_the_date_headers', $html, $event_month, $event_year );
-		}
-	}
-}
-
 
 if ( ! function_exists( 'chivenewengland_comment' ) ) :
 /**
