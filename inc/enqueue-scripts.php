@@ -20,10 +20,9 @@
 
             //enqueue foundation, normalize and custom styles
             wp_enqueue_style( 'font-lato', '//fonts.googleapis.com/css?family=Lato:300,400,700,300italics,400italic,700italic', array(), '1.0.0', 'all' );
-            wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css', array(), '4.4.0', 'all' );
+            wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css', array(), '4.6.3', 'all' );
             wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css', array(), '1.3.0', 'all' );
             wp_enqueue_style( 'boostrap-min', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '3.3.4', 'all' );
-            wp_enqueue_style( 'shake-min', get_template_directory_uri() . '/css/shake.min.css', array(), '1.0.0', 'all' );
             wp_enqueue_style( 'chivenewengland', get_template_directory_uri() . '/css/chivenewengland.css', array(), '1.0.0', 'all' );
         }
 
