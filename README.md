@@ -6,6 +6,10 @@ This theme was designed for WordPress for chivenewengland.com, use the theme how
 
 #### Change Log:
 
+##### v1.10.1 (Sept 14, 2016)
+- Removed shake.css
+- Updated the Font Awesome version indicator
+
 ##### v1.10.0 (Sept 10, 2016)
 - Updated Font Awesome to v4.6.3.
 - Removed support for The Events Calendar plugin.
