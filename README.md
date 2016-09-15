@@ -6,6 +6,10 @@ This theme was designed for WordPress for chivenewengland.com, use the theme how
 
 #### Change Log:
 
+##### v1.11.0 (Sept 14, 2016)
+- Theme is now AMP validated
+- Loading custom fonts from white-listed AMP CDNs to comply with AMP validation rules. (https://www.ampproject.org/docs/reference/spec.html#custom-fonts)
+
 ##### v1.10.1 (Sept 14, 2016)
 - Removed shake.css
 - Updated the Font Awesome version indicator
